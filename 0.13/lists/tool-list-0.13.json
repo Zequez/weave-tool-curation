@@ -213,6 +213,33 @@
                     "releasedAt": 1736866346798
                 }
             ]
+        },
+        {
+            "id": "substrate",
+            "versionBranch": "main",
+            "title": "Substrate",
+            "subtitle": "Embed Weave assets on a canvas",
+            "description": "Embed Weave assets on a canvas",
+            "icon": "https://raw.githubusercontent.com/zequez/substrate/refs/heads/main/icon.svg",
+            "tags": [
+                "substrate",
+                "canvas",
+                "grid",
+                "embedding"
+            ],
+            "versions": [
+                {
+                    "version": "0.1.0",
+                    "url": "https://github.com/zequez/substrate/releases/download/v0.1.0/substrate.webhapp",
+                    "hashes": {
+                        "happSha256": "6b6d4c60d4ddc5b82731263519a22597bbfea6d0e4eb57bfd43b16b1e7600f2c",
+                        "webhappSha256": "7c0740010ed67ca4794d02f7a23cc839fb566746e5c85fc3c90b2b3826c5c209",
+                        "uiSha256": "aaeb4a2279889133bdbdcd68af6d808ac3fa4a135d9a8ff120650722f33bcaa8"
+                    },
+                    "changelog": "- There is an infinite grid-based canvas you can pan and zoom\n     - You can drag squares to create frames that can have embedded Weave assets\n     - You can resize, move and delete the frames\n     - Frames are synced automatically to every group member\n     - Uses Generic DNA as Holochain backend\n     - Uses Svelte 5 for UI\n     - Uses Weave Dev Context for development environment",
+                    "releasedAt": 1738506510280
+                }
+            ]
         }
     ]
 }
