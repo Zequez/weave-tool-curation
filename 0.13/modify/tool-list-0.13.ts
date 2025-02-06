@@ -26,7 +26,7 @@ export default defineDevCollectiveToolList({
           hashes: {
             happSha256: "1fddfda589f79279e5953c98abc8c515ed790073a1c28065da58d84a1398d809",
             webhappSha256: "f2a86ba74d30cbfb62bc3e86dd921d69e2d1a2461b85b29c93dbc4a6b1dcea94",
-            uiSha256: "ef2ee91c5bd985752487f88bd97fe4ed67adcecbb0856d663b406f145cb42749"
+            uiSha256: "ef2ee91c5bd985752487f88bd97fe4ed67adcecbb0856d663b406f145cb42749",
           },
           changelog: "Fixed DMs & notifications received via signals",
           releasedAt: 1738617365000,
@@ -229,6 +229,26 @@ export default defineDevCollectiveToolList({
      - Made shadows all share the same z-index so they don't overlap
      - Added provision to disable pointer events on iframes while dragging so the panning doesn't get stuck`,
           releasedAt: 1738676622953,
+        },
+        {
+          version: "0.1.2",
+          url: "https://github.com/zequez/substrate/releases/download/v0.1.2/substrate.webhapp",
+          hashes: {
+            happSha256: "6b6d4c60d4ddc5b82731263519a22597bbfea6d0e4eb57bfd43b16b1e7600f2c",
+            webhappSha256: "e8f6089ea25309d32a3e953c62c0188dd41afa7636bcb3c64940af94ad21eec4",
+            uiSha256: "35a76170d8e50b25f900998567bf9b7c6ec4671af98e77909f918821b7e17453",
+          },
+          changelog: `- Extracted most canvas UI-related states out of the main store
+  - Added max zoom out button that zooms out and pans so that all frames are visible simuntaneously
+  - Adjust max zoom out so that all frames can be visible simultaneosly on the maximum zoom out
+  - Added optimization so only frames in the viewport are rendered
+  - Added optimization so assets are not loaded when far out of the zoom level
+  - Make it so frames cannot be overlapped
+  - The resize handles are now zoom-level adapted and disabled during very far zoom out
+  - At <=0.5 zoom frames turn into move-only mode and you can just drag them from anywhere
+  - Fixed grid not rendering on first app start
+  - Added new frame controls that are hidden and show at the edge of the frame when hovering (only at >0.5 zoom)`,
+          releasedAt: 1738871932610,
         },
       ],
     },
